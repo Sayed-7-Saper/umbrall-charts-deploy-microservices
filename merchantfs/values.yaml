@@ -1,0 +1,30 @@
+global:
+  namespace: merchantfs-production
+  NODE_ENV: production
+  MERCHANT_PORTAL_ROUTE: merchants.portals.kashier.io
+  STORYBOOK_ROUTE: storybook.portals.kashier.io
+  routeAnnotations:
+    haproxy.router.openshift.io/balance: source
+    haproxy.router.openshift.io/disable_cookies: "false"
+    haproxy.router.openshift.io/timeout: 2m
+  podAnnotations:
+    reloader.stakater.com/auto: "true"
+
+### Sub Charts Specific Values ###
+# Merchant Portal   
+merchant-portal:
+  enabled: true
+  image:
+    tag: production-cdcbce35
+  ENV_VARS:
+    mode: "common"
+
+# Storybook
+storybook:
+  enabled: true
+  image:
+    tag: production-cdcbce35
+  ENV_VARS:
+    mode: "common"
+
+
