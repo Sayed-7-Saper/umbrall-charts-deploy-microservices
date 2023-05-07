@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: repo.staging.payformance.io:5050/afarouk/merchantfe/kashier
+  repository: repo.staging.payformance.io:5050/payformance/portals-v2/merchant-portal
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: 76b1652b
