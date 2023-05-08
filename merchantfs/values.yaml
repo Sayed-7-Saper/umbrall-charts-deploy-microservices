@@ -1,7 +1,7 @@
 global:
   namespace: merchantfs-development
   NODE_ENV: development
-  MERCHANT_PORTAL_ROUTE: mercants.development.payformance.io
+  MERCHANT_PORTAL_ROUTE: merchants.development.payformance.io
   STORYBOOK_ROUTE: storybook.development.payformance.io
   routeAnnotations:
     haproxy.router.openshift.io/balance: source
