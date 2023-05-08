@@ -24,6 +24,4 @@ storybook:
     tag: development-63d20e46
   ENV_VARS:
     mode: "common"
-merchants-portal:
-  image:
-    tag: development-63d20e46
+
