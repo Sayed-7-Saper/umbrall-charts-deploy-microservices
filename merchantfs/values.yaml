@@ -1,8 +1,8 @@
 global:
   namespace: merchantfs-production
   NODE_ENV: production
-  MERCHANT_PORTAL_ROUTE: merchants.dev.payformance.io
-  STORYBOOK_ROUTE: storybook.dev.payformance.io
+  MERCHANT_PORTAL_ROUTE: merchants.portals.kashier.io
+  STORYBOOK_ROUTE: storybook.portals.kashier.io
   routeAnnotations:
     haproxy.router.openshift.io/balance: source
     haproxy.router.openshift.io/disable_cookies: "false"
