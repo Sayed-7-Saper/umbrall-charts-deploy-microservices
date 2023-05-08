@@ -1,8 +1,8 @@
 global:
-  namespace: merchantfs-production
-  NODE_ENV: production
-  MERCHANT_PORTAL_ROUTE: merchants.portals.kashier.io
-  STORYBOOK_ROUTE: storybook.portals.kashier.io
+  namespace: merchantfs-staging
+  NODE_ENV: staging
+  MERCHANT_PORTAL_ROUTE: merchants.portals.staging.payformance.io 
+  STORYBOOK_ROUTE: storybook.portals.staging.payformance.io 
   routeAnnotations:
     haproxy.router.openshift.io/balance: source
     haproxy.router.openshift.io/disable_cookies: "false"
@@ -14,13 +14,13 @@ global:
 merchant-portal:
   enabled: true
   image:
-    tag: production-36568c70
+    tag: staging-36568c70
   ENV_VARS:
     mode: "common"
 # Storybook
 storybook:
   enabled: true
   image:
-    tag: production-1f020122
+    tag: staging-1f020122
   ENV_VARS:
     mode: "common"
