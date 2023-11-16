@@ -32,3 +32,8 @@ dependencies:
 - name: storybook
   version: 0.1.0
   repository: file://storybook
+
+- name: checkout
+  version: 0.1.0
+  repository: file://checkout
+
