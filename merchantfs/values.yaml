@@ -3,6 +3,7 @@ global:
   NODE_ENV: development
   MERCHANT_PORTAL_ROUTE: portal.development.payformance.io
   STORYBOOK_ROUTE: storybook.development.payformance.io
+  CHECKOUT_ROUTE: checkout.development.payformance.io
   routeAnnotations:
     haproxy.router.openshift.io/balance: source
     haproxy.router.openshift.io/disable_cookies: "false"
