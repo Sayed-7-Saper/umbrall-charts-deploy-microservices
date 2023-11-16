@@ -24,3 +24,6 @@ storybook:
     tag: development-864cf0b1
   ENV_VARS:
     mode: "common"
+checkout:
+  image:
+    tag: development-146d4f1a
