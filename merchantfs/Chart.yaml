@@ -30,6 +30,7 @@ dependencies:
   repository: file://merchant-portal
 
 - name: storybook
+  condition: storybook.enabled
   version: 0.1.0
   repository: file://storybook
 
