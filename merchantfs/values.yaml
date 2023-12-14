@@ -15,7 +15,7 @@ global:
 merchant-portal:
   enabled: true
   image:
-    tag: development-855ca915
+    tag: development-99872529
   ENV_VARS:
     mode: "common"
 # Storybook
