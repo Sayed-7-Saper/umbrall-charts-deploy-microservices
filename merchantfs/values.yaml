@@ -28,3 +28,6 @@ storybook:
 checkout:
   image:
     tag: development-c9083389
+payment:
+  image:
+    tag: development-69135483
