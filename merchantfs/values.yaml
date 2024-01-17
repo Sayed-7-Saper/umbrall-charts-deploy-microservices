@@ -30,4 +30,4 @@ checkout:
     tag: development-ccda6be8
 payment:
   image:
-    tag: development-73c32850
+    tag: development-ccda6be8
