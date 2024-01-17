@@ -38,3 +38,7 @@ dependencies:
   version: 0.1.0
   repository: file://checkout
 
+- name: payment
+  version: 0.1.0
+  repository: file://payment
+
