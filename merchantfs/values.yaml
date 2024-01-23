@@ -31,4 +31,4 @@ checkout:
     tag: development-4586f5ec
 payment:
   image:
-    tag: development-4586f5ec
+    tag: development-53b2b190
