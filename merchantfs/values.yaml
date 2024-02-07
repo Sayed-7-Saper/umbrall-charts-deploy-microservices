@@ -28,7 +28,7 @@ storybook:
     mode: "common"
 checkout:
   image:
-    tag: development-1b742066
+    tag: development-166e98df
 payment:
   image:
     tag: development-a5b4dd7f
