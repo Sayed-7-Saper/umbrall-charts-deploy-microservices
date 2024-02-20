@@ -31,4 +31,4 @@ checkout:
     tag: development-c113cb60
 payment:
   image:
-    tag: development-5cca4425
+    tag: development-f1152017
