@@ -31,4 +31,4 @@ checkout:
     tag: development-dab30bb3
 payment:
   image:
-    tag: development-ca478a7a
+    tag: development-dab30bb3
