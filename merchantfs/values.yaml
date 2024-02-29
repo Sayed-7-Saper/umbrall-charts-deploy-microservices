@@ -31,4 +31,4 @@ checkout:
     tag: development-4623ed2c
 payment:
   image:
-    tag: development-4623ed2c
+    tag: development-27e6dda5
