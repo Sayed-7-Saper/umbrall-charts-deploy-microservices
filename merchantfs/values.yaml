@@ -31,4 +31,4 @@ checkout:
     tag: development-f6bff981
 payment:
   image:
-    tag: development-92634040
+    tag: development-f6bff981
