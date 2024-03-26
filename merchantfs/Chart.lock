@@ -1,0 +1,15 @@
+dependencies:
+- name: merchant-portal
+  repository: file://merchant-portal
+  version: 0.1.0
+- name: storybook
+  repository: file://storybook
+  version: 0.1.0
+- name: checkout
+  repository: file://checkout
+  version: 0.1.0
+- name: payment
+  repository: file://payment
+  version: 0.1.0
+digest: sha256:a580deb30fe9107220b55de241d9da6941d417737b4824268373a2ae605fce4a
+generated: "2024-03-26T14:17:22.783793801+02:00"
