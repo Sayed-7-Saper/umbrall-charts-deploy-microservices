@@ -31,4 +31,4 @@ checkout:
     tag: development-125c0166
 payment:
   image:
-    tag: development-13556e2c
+    tag: development-839920b5
