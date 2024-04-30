@@ -31,4 +31,4 @@ checkout:
     tag: development-800d6ab8
 payment:
   image:
-    tag: development-1245fc44
+    tag: development-800d6ab8
