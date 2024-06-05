@@ -1,7 +1,7 @@
 
-#Creating SA & Acces for merchant-portal
+#Creating SA & Acces for portal
 
-oc adm policy add-scc-to-user anyuid system:serviceaccount:merchantfs-development:merchantfs-development-merchant-portal
+oc adm policy add-scc-to-user anyuid system:serviceaccount:merchantfs-development:merchantfs-development-portal
 
 #Creating SA & Acces for storybook
 

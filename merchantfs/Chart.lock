@@ -1,6 +1,6 @@
 dependencies:
-- name: merchant-portal
-  repository: file://merchant-portal
+- name: portal
+  repository: file://portal
   version: 0.1.0
 - name: storybook
   repository: file://storybook

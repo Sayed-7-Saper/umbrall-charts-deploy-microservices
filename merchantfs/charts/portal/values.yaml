@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: repo.staging.payformance.io:5050/payformance/portals-v2/storybook
+  repository: repo.staging.payformance.io:5050/payformance/portals-v2/portal
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: 9753c9da
+  tag: 76b1652b
 imagePullSecrets:
     - name: registry-credentials
   #imagePullSecrets: 
@@ -23,7 +23,7 @@ serviceAccount:
   annotations: {}
   # The name of the service account to use.
   # If not set and create is true, a name is generated using the fullname template
-  #name: "storybook"
+  #name: "merchantfs"
 
 podAnnotations: {}
 

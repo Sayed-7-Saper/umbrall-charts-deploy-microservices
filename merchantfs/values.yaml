@@ -1,8 +1,7 @@
 global:
   namespace: merchantfs-development
   NODE_ENV: development
-  MERCHANT_PORTAL_ROUTE: portal.development.payformance.io
-  STORYBOOK_ROUTE: storybook.development.payformance.io
+  PORTAL_ROUTE: portal.development.payformance.io
   CHECKOUT_ROUTE: checkouts.development.payformance.io
   PAYMENT_ROUTE: checkout.development.payformance.io
   routeAnnotations:
@@ -13,17 +12,10 @@ global:
     reloader.stakater.com/auto: "true"
 ### Sub Charts Specific Values ###
 # Merchant Portal   
-merchant-portal:
+portal:
   enabled: true
   image:
     tag: development-106cb211
-  ENV_VARS:
-    mode: "common"
-# Storybook
-storybook:
-  enabled: false
-  image:
-    tag: development-864cf0b1
   ENV_VARS:
     mode: "common"
 checkout:

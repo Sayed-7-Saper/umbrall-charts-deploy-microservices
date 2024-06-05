@@ -25,14 +25,10 @@ appVersion: "1.16.1"
 
 
 dependencies:
-- name: merchant-portal
+- name: portal
   version: 0.1.0
-  repository: file://merchant-portal
+  repository: file://portal
 
-- name: storybook
-  condition: storybook.enabled
-  version: 0.1.0
-  repository: file://storybook
 
 - name: checkout
   version: 0.1.0
