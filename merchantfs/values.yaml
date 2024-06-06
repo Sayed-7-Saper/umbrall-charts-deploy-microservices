@@ -26,6 +26,4 @@ checkout:
 payment:
   image:
     tag: development-10d31bc6
-merchant-portal:
-  image:
-    tag: development-10d31bc6
+
