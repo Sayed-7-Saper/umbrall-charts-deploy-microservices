@@ -86,3 +86,4 @@ ENV_VARS:
 
   NODE_ENV: "staging"
   mode: "common"
+applicationGroup: "Portal-v2"
