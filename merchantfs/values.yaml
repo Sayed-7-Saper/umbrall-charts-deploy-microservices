@@ -17,7 +17,7 @@ global:
 portal:
   enabled: true
   image:
-    tag: development-106cb211
+    tag: development-e7ac2a34
   ENV_VARS:
     mode: "common"
 checkout:
