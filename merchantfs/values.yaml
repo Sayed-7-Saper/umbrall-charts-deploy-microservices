@@ -1,5 +1,7 @@
 global:
-  namespace: merchantfs-development
+  namespace: harbor-development
+  ImageRegistry: registry-az1.kashier.io
+  imagePath: kashier-development
   NODE_ENV: development
   PORTAL_ROUTE: portal.development.payformance.io
   CHECKOUT_ROUTE: checkouts.development.payformance.io
