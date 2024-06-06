@@ -3,9 +3,9 @@ global:
   ImageRegistry: registry-az1.kashier.io
   imagePath: kashier-development
   NODE_ENV: development
-  PORTAL_ROUTE: portal.development.payformance.io
-  CHECKOUT_ROUTE: checkouts.development.payformance.io
-  PAYMENT_ROUTE: checkout.development.payformance.io
+  PORTAL_ROUTE: portal.devops.payformance.io
+  CHECKOUT_ROUTE: checkouts.devops.payformance.io
+  PAYMENT_ROUTE: checkout.devops.payformance.io
   routeAnnotations:
     haproxy.router.openshift.io/balance: source
     haproxy.router.openshift.io/disable_cookies: "false"
