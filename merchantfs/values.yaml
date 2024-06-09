@@ -22,7 +22,7 @@ portal:
     mode: "common"
 checkout:
   image:
-    tag: development-e7ac2a34
+    tag: development-7ebe0ac2
 payment:
   image:
     tag: development-e7ac2a34
