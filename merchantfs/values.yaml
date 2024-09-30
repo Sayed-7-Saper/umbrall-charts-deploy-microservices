@@ -2,6 +2,18 @@ global:
   namespace: harbor-development
   ImageRegistry: registry-az1.kashier.io
   imagePath: kashier-development
+  maxUnavailable: 1
+  imagePullSecrets:
+      - name: harbor-registery-secret
+  SECURITY_CONTEXT:
+      nodeUser: "allow-root" ##  "nodeuser-scc"
+      nginxUser: "allow-root" ##"nginxuser-scc"
+  registeryconfig:
+      name: "harbor-registery-secret"
+      username: "robot-platform-env-manfist-staging"
+      password: "Reih3rJz7WW2fnSulsTxWsZfgbAAlqMN"
+      email: "devops@kashier.io"
+      registry: "registry-az1.kashier.io"
   NODE_ENV: development
   PORTAL_ROUTE: portal.devops.payformance.io
   CHECKOUT_ROUTE: checkouts.devops.payformance.io
