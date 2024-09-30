@@ -1,5 +1,5 @@
 global:
-  namespace: harbor-development
+  namespace: merchantfs-development
   ImageRegistry: registry-az1.kashier.io
   imagePath: kashier-development
   maxUnavailable: 1
@@ -15,9 +15,9 @@ global:
       email: "devops@kashier.io"
       registry: "registry-az1.kashier.io"
   NODE_ENV: development
-  PORTAL_ROUTE: portal.devops.payformance.io
-  CHECKOUT_ROUTE: checkouts.devops.payformance.io
-  PAYMENT_ROUTE: checkout.devops.payformance.io
+  PORTAL_ROUTE: portal.development.payformance.io
+  CHECKOUT_ROUTE: checkouts.development.payformance.io
+  PAYMENT_ROUTE: checkout.development.payformance.io
   routeAnnotations:
     haproxy.router.openshift.io/balance: source
     haproxy.router.openshift.io/disable_cookies: "false"
@@ -29,12 +29,12 @@ global:
 portal:
   enabled: true
   image:
-    tag: development-106cb211
+    tag: development-c75e3f55
   ENV_VARS:
     mode: "common"
 checkout:
   image:
-    tag: development-ffe7678a
+    tag: development-c75e3f55
 payment:
   image:
-    tag: development-ffe7678a
+    tag: development-c75e3f55
