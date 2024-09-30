@@ -1,7 +1,7 @@
 global:
   namespace: merchantfs-development
   ImageRegistry: registry-az1.kashier.io
-  imagePath: kashier-development
+  imagePath: payformance/portals-v2
   maxUnavailable: 1
   imagePullSecrets:
       - name: harbor-registery-secret
