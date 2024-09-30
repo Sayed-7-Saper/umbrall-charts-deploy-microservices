@@ -5,4 +5,4 @@ metadata:
 data:
     NODE_ENV: {{ .Values.global.NODE_ENV }}
     mode: {{ .Values.ENV_VARS.mode }}
-    STORYBOOK_ROUTE: {{ .Values.global.STORYBOOK_ROUTE }}
+    PORTAL_ROUTE: {{ .Values.global.PORTAL_ROUTE }}
