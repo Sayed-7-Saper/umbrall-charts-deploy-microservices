@@ -28,12 +28,12 @@ global:
 portal:
   enabled: true
   image:
-    tag: staging-c4a11a8c
-  ENV_VARS:
-    mode: "common"
+    tag: staging-8c830894
 checkout:
+  enabled: true
   image:
     tag: staging-c60015c9
 payment:
+  enabled: true
   image:
     tag: staging-c60015c9
