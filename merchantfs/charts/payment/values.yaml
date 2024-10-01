@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: repo.staging.payformance.io:5050/payformance/portals-v2/payment
+  repository: registry-az1.kashier.io/payformance/portals-v2/payment
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: 9753c9da
