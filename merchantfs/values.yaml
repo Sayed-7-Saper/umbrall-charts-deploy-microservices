@@ -3,16 +3,16 @@ global:
   imagePath: payformance/portals-v2
   maxUnavailable: 1
   imagePullSecrets:
-      - name: harbor-registery-secret
+    - name: harbor-registery-secret
   SECURITY_CONTEXT:
-      nodeUser: "allow-root" ##  "nodeuser-scc"
-      nginxUser: "allow-root" ##"nginxuser-scc"
+    nodeUser: "allow-root" ##  "nodeuser-scc"
+    nginxUser: "allow-root" ##"nginxuser-scc"
   registeryconfig:
-      name: "harbor-registery-secret"
-      username: "robot-platform-env-manfist-staging"
-      password: "Reih3rJz7WW2fnSulsTxWsZfgbAAlqMN"
-      email: "devops@kashier.io"
-      registry: "registry-az1.kashier.io"
+    name: "harbor-registery-secret"
+    username: "robot-platform-env-manfist-staging"
+    password: "Reih3rJz7WW2fnSulsTxWsZfgbAAlqMN"
+    email: "devops@kashier.io"
+    registry: "registry-az1.kashier.io"
   NODE_ENV: staging
   PORTAL_ROUTE: portal.staging.payformance.io
   CHECKOUT_ROUTE: checkouts.staging.payformance.io
@@ -37,3 +37,6 @@ payment:
   enabled: true
   image:
     tag: staging-c60015c9
+merchant-portal:
+  image:
+    tag: staging-0aef9e3c
