@@ -39,4 +39,4 @@ payment:
     tag: staging-c60015c9
 merchant-portal:
   image:
-    tag: staging-33414507
+    tag: staging-8420d5b4
