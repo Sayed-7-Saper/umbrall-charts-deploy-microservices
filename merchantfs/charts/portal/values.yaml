@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: registry-az1.kashier.io/payformance/portals-v2/merchant-portal
+  repository: registry-az1.kashier.io/payformance/portals-v2/portal
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: 76b1652b
