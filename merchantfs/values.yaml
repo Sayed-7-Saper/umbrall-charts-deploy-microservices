@@ -32,7 +32,7 @@ portal:
 checkout:
   enabled: true
   image:
-    tag: staging-3bd1ce3f
+    tag: staging-d7bfa01b
 payment:
   enabled: true
   image:
