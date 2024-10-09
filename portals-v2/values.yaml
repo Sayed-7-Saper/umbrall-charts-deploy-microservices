@@ -36,4 +36,4 @@ checkout:
 payment:
   enabled: true
   image:
-    tag: staging-cffd0de0
+    tag: staging-4c2f169f
