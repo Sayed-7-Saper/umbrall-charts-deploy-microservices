@@ -36,7 +36,7 @@ checkout:
 payment:
   enabled: true
   image:
-    tag: staging-3bd1ce3f
+    tag: staging-cffd0de0
 merchant-portal:
   image:
     tag: staging-8420d5b4
