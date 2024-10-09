@@ -28,7 +28,7 @@ global:
 portal:
   enabled: true
   image:
-    tag: staging-cffd0de0
+    tag: staging-698d0554
 checkout:
   enabled: true
   image:
