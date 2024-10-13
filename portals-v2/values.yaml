@@ -27,13 +27,16 @@ global:
 # Merchant Portal   
 portal:
   enabled: true
+  replicaCount: 1
   image:
     tag: staging-9064764b
 checkout:
   enabled: true
+  replicaCount: 1
   image:
     tag: staging-4c2f169f
 payment:
   enabled: true
+  replicaCount: 1
   image:
     tag: staging-4c2f169f
