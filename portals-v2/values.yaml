@@ -39,4 +39,4 @@ payment:
   enabled: true
   replicaCount: 1
   image:
-    tag: staging-4c2f169f
+    tag: staging-c8187a59
