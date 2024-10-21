@@ -34,7 +34,7 @@ checkout:
   enabled: true
   replicaCount: 1
   image:
-    tag: staging-fa2f1d72
+    tag: staging-7a132045
 payment:
   enabled: true
   replicaCount: 1
