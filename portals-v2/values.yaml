@@ -29,7 +29,7 @@ portal:
   enabled: true
   replicaCount: 1
   image:
-    tag: staging-f2ff29f1
+    tag: staging-17d888b6
 checkout:
   enabled: true
   replicaCount: 1
