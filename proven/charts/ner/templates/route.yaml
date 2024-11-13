@@ -1,0 +1,34 @@
+{{- $fullName := include "myservice.fullname" . -}}
+{{- $svcPort := .Values.service.port -}}
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: {{ $fullName }}
+  # namespace: development
+  labels:
+    {{- include "myservice.labels" . | nindent 4 }}
+  {{- with .Values.global.routeAnnotations }}
+  annotations:
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
+spec:
+  host: {{ .Values.global.ner_ROUTE }}
+  to:
+    kind: Service
+    name: {{ $fullName }}
+    weight: 100
+  port:
+    targetPort: http
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect
+  wildcardPolicy: None
+status:
+  ingress:
+    - host: {{ .Values.global.ner_ROUTE }}
+      routerName: default
+      conditions:
+        - type: Admitted
+          status: 'True'
+      wildcardPolicy: None
+      #routerCanonicalHostname: router-default.apps.okd4-gpx-dc.kashier.io

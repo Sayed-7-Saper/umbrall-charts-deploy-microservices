@@ -1,0 +1,42 @@
+global:
+  ImageRegistry: public.ecr.aws/r7p7t9y8 
+  imagePath: proven
+  maxUnavailable: 1
+  imagePullSecrets:
+    - name: ecr-registery-secret
+  SECURITY_CONTEXT:
+    nodeUser: "nodeuser-scc" ##  "nodeuser-scc"
+    nginxUser: "nginxuser-scc" ##"allow-root"
+  registeryconfig:
+    name: "ecr-registery-secret"
+    username: "robot-platform-manfist-staging"
+    password: "ReihTxWsZfgbAAlqMN"
+    email: "devops@tets.io"
+    registry: "registry-az1.test.io"
+  NODE_ENV: staging
+  proxy_ROUTE: proxy.dev.test.io
+  ner_ROUTE: ner.dev.test.io
+  sentiment_ROUTE: sentiment.dev.test.io
+  routeAnnotations:
+    haproxy.router.openshift.io/balance: source
+    haproxy.router.openshift.io/disable_cookies: "false"
+    haproxy.router.openshift.io/timeout: 2m
+  podAnnotations:
+    reloader.stakater.com/auto: "true"
+### Sub Charts Specific Values ###
+# Merchant proxy   
+proxy:
+  enabled: true
+  replicaCount: 1
+  image:
+    tag: dev-f50f2d50
+ner:
+  enabled: true
+  replicaCount: 1
+  image:
+    tag: dev-a6548961
+sentiment:
+  enabled: true
+  replicaCount: 1
+  image:
+    tag: dev-6c63da50
